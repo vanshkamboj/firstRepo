@@ -1,8 +1,9 @@
+
 function saveUserDetails(){
-    var id= document.getElementById("user_id").value;
-    var pass=document.getElementById("user_pass").value;
-    if(typeof(Storage)!=="undefined"){
     
+    if(typeof(Storage)!=="undefined"){
+        var id= document.getElementById("user_id").value;
+        var pass=document.getElementById("user_pass").value;
         localStorage.setItem("user_id",id);
         localStorage.setItem("User_pass",pass);
         sessionStorage.setItem("user_id",id);
@@ -13,6 +14,31 @@ function saveUserDetails(){
 
     }
 
+
+}
+function validation(){
+    saveUserDetails();
+    var id= document.getElementById("user_id").value;
+    var pass=document.getElementById("user_pass").value;
+    if((id=="")||(id==null)){
+        window.alert("Please Enter Username");
+    }
+    else if((pass=="")||(pass==null)){
+        window.alert("Please Enter password");
+    }
+    else if((id=="admin")&&(pass=="admin")){
+        window.location.href="admin.html";
+    }
+    else if((id=="user")&&(pass=="user")){
+        window.location.href="UserInfo.html";
+    }
+    else if((id=="guest")&&(pass=="guest")){
+        window.location.href="guest.html";
+    }
+    else{
+        window.alert("Invalid user or password....!!!");
+
+    }
 
 }
 function GetUserData(){

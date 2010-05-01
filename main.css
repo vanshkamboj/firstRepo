@@ -1,3 +1,4 @@
+@import "compass/css3";
 body[class="Body"]{
     background-image:url("background.jpg");
     margin-top: 70px;
@@ -20,17 +21,7 @@ body[class="Body"]{
     color: white;
     
 }
-button{
-    color: white;
-    background-color: darkslategray;
-    border: none;
-    padding: 5px 25px;
-    text-decoration: none;
-    margin: 5px 4px;
-    cursor: pointer; 
-    
-    
-}
+
 footer{
     text-align: center;
     margin-top:100px; 
@@ -39,7 +30,7 @@ footer{
     text-align: center;
     padding: 5px;
 }
-input[type=email]{
+input[type=text]{
     border: 2px solid #FFFFFF;
     border-radius: 3px;
     background:transparent;
@@ -64,6 +55,55 @@ input[type=password]{
 ::placeholder{
     color: #FFFFFF;
 }
+/*button degin and animation code*/
+button{
+    color: white;
+    background-color: darkslategray;
+    margin: 5px 4px;
+    padding: 5px 25px;
+    border: none;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer; 
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #5a99d4;
+    -webkit-animation: button 1.5s infinite;
+    animation: button 1.5s infinite;
+    
+}
+button:hover{
+    -webkit-animation: none;
+    animation: none;
+    background: #5a99d4;
+}
+@-webkit-keyframes button {
+   0% {
+        box-shadow: 0 0 0 0  #5a99d4;
+    }
+    70% {
+        box-shadow: 0 0 50px #5a99d4;
+      
+    }
+    100% {
+        box-shadow: 0 0 0 0#5a99d4;
+    }
+  }
+  @keyframes button {
+    0% {
+        box-shadow: 0 0 0 0  #5a99d4;
+    }
+    70% {
+        box-shadow: 0 0 50px 10px #5a99d4;
+      
+    }
+    100% {
+        box-shadow: 0 0 0 0#5a99d4;
+    }
+  }
 /*UserInfo page style code*/
 .main{
     text-align: center;

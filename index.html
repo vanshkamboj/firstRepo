@@ -1,5 +1,6 @@
 <html>
     <head>
+        
         <title>Login Page</title>
         <link rel="stylesheet" href="main.css">  
     </head>
@@ -10,9 +11,8 @@
             <h1 id="result">SLEEK LOGIN FORM</h1>
             <div class="login_form">
                 <h2>Log in to your Account</h2>
-                <form class="form" method="POST" action="UserInfo.html">
                     <div class="form_group" id="email">
-                        <input type="email" name="email" id="user_id" placeholder="EMAIL">
+                        <input type="text" name="email" id="user_id" placeholder="USER NAME">
                     </div>
                     <div class="form_group" id="pass">
                             <input type="password" name="password" id="user_pass" placeholder="PASSWORD">
@@ -23,9 +23,9 @@
                          </label>
                      </div>
                      <div class="form_group">
-                            <button name="LOGIN" onclick="saveUserDetails()">LOGIN</button>
+                            <button name="LOGIN" onclick="validation()">LOGIN</button>
                      </div>
-                </form>
+            
             </div>
         </div> 
         
