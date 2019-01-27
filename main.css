@@ -1,0 +1,67 @@
+body{
+    background-image:url("back.jpg");
+    margin-top: 70px;
+    font:12px/15px Roboto, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    
+    
+}
+.main_form{
+    text-align: center;
+    padding: 20px;
+    
+}
+.login_form{
+    margin-top: 50px;
+}
+.form{
+    padding: 5px;
+    
+    color: white;
+    
+}
+button{
+    color: white;
+    background-color: darkslategray;
+    border: none;
+    padding: 5px 25px;
+    text-decoration: none;
+    margin: 5px 4px;
+    cursor: pointer; 
+    
+    
+}
+footer{
+    text-align: center;
+    margin-top:100px; 
+}
+.form_group{
+    text-align: center;
+    padding: 5px;
+}
+input[type=email]{
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    background:transparent;
+    background-image: url('email.png');
+    background-position: 2px 3px;
+    background-repeat: no-repeat;
+    padding-left: 30px;   
+    color: #FFFFFF;
+
+}
+input[type=password]{
+    border: 2px solid #FFFFFF;
+    border-radius: 3px;
+    background:transparent;
+    background-image: url('lock.png');
+    background-position: 2px 3px;
+    background-repeat: no-repeat;
+    padding-left: 30px;   
+    color: #FFFFFF;
+
+}
+::placeholder{
+    color: #FFFFFF;
+}
+

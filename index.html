@@ -1,32 +1,35 @@
 <html>
-<head>
-	<title>Login Form</title>  
-</head>
-<body>
-<div id="wrapper">
-   <div class="main-form">
-		<div class="text-center">
-                   <h1>SLEEK LOGIN FORM</h1>
-		</div>
-		<form action="#" method="POST">
-           
-              
-               <div class="form-body">
-                   <h3 class="form-group text-center">Log in to your Account</h3>
-                   <div class="form-group">
-                       <input class="form-control" type="email" id="email" name="email" placeholder="EMAIL">
-                   </div>
-				    <div class="form-group">
-                       <input class="form-control" type="password" id="pass" name="pass" placeholder="PASSWORD">
-                   </div>
-                   <div class="form-group text-center">
-                       <button class="btn btn-default btn-lg" type="button" onclick="newAccount();">LOGIN</button>
-					   <p>REGISTER NEW ACCOUNT-></P>
-                   </div>
-               </div>
-           
-       </form>
-   </div>
-</div>
-</body>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="main.css">  
+    </head>
+
+    
+    <body>
+        <div class="main_form">
+            <h1>SLEEK LOGIN FORM</h1>
+            <div class="login_form">
+                <h2>Log in to your Account</h2>
+                <form class="form" method="POST" action="#">
+                    <div class="form_group" id="email">
+                        <input type="email" name="email" placeholder="EMAIL">
+                    </div>
+                    <div class="form_group" id="pass">
+                            <input type="password" name="password" placeholder="PASSWORD">
+                     </div>
+                     <div class="form_group">
+                         <label>
+                                <input type="checkbox">Remember me
+                         </label>
+                     </div>
+                     <div class="form_group">
+                            <button name="LOGIN">LOGIN</button>
+                     </div>
+                </form>
+            </div>
+        </div>    
+    </body>
+    <footer>
+            <p>@2016 Sleek Lohin Form. All Rights Receved | Design by W3layouts</p>
+    </footer>
 </html>
