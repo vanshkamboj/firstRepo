@@ -23,14 +23,14 @@
                          </label>
                      </div>
                      <div class="form_group">
-                            <button name="LOGIN" onclick="getdata()">LOGIN</button>
+                            <button name="LOGIN" onclick="saveUserDetails()">LOGIN</button>
                      </div>
                 </form>
             </div>
         </div> 
         
         <script>
-            function getdata(){
+            function saveUserDetails(){
                 var id= document.getElementById("user_id").value;
                 var pass=document.getElementById("user_pass").value;
                 if(typeof(Storage)!=="undefined"){
