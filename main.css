@@ -1,4 +1,4 @@
-body{
+body[class="Body"]{
     background-image:url("background.jpg");
     margin-top: 70px;
     font:12px/15px Roboto, "Helvetica Neue", Helvetica, sans-serif;
@@ -63,5 +63,15 @@ input[type=password]{
 }
 ::placeholder{
     color: #FFFFFF;
+}
+/*UserInfo page style code*/
+.main{
+    text-align: center;
+}
+body[class="MainBody"]{
+    margin-top: 70px;
+    font:12px/15px Roboto, "Helvetica Neue", Helvetica, sans-serif;
+    background-image:url("pink.png");
+    color: black;
 }
 

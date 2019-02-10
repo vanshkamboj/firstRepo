@@ -5,12 +5,12 @@
     </head>
 
     
-    <body>
+    <body class="Body">
         <div class="main_form">
             <h1 id="result">SLEEK LOGIN FORM</h1>
             <div class="login_form">
                 <h2>Log in to your Account</h2>
-                <form class="form" method="POST" action="#">
+                <form class="form" method="POST" action="UserInfo.html">
                     <div class="form_group" id="email">
                         <input type="email" name="email" id="user_id" placeholder="EMAIL">
                     </div>
@@ -29,25 +29,7 @@
             </div>
         </div> 
         
-        <script>
-            function saveUserDetails(){
-                var id= document.getElementById("user_id").value;
-                var pass=document.getElementById("user_pass").value;
-                if(typeof(Storage)!=="undefined"){
-                
-                    localStorage.setItem("user_id",id);
-                    localStorage.setItem("User_pass",pass);
-                    sessionStorage.setItem("user_id",id);
-                    sessionStorage.setItem("user_pass",pass);
-                }
-                else{
-                    document.getElementById("result").innerHTML="Sorry, your browser does not support Web Storage...";
-
-                }
-
-            }
-            
-        </script>
+        <script src="main.js"></script>
     </body>
     <footer>
             <p>@2016 Sleek Lohin Form. All Rights Receved | Design by W3layouts</p>
